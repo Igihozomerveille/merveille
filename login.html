@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("mer.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #00c9a7;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: black;
+}
+
+/* FORM CONTAINER */
+.form-container {
+    width: 320px;
+    margin: 100px auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* TITLE */
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+/* INPUTS */
+input {
+    width: 95%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #00c9a7;
+    box-shadow: 0 0 5px #00c9a7;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #00c9a7;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #009e83;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    font-size: 14px;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="home.html">Home</a>
+    <a href="registration.html">Registration</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="login.html">Form</a>
+    <a href="about.html">About</a>
+</nav>
+
+<div class="form-container">
+    <h2>Login Form</h2>
+
+    <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Enter Name" required>
+
+        <input type="email" name="email" placeholder="Enter Email" required>
+
+        <input type="password" name="password" placeholder="Enter Password" required>
+
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<div class="footer">
+  <p>© 2026 My First Website | Designed with passion 💖</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Register</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("nav.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #ff6f91;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #222;
+}
+
+/* FORM CONTAINER */
+.form-container {
+    width: 340px;
+    margin: 90px auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+/* TITLE */
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* INPUTS */
+input {
+    width: 95%;
+    padding: 10px;
+    margin-top: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #ff6f91;
+    box-shadow: 0 0 5px #ff6f91;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 18px;
+    background-color: #ff6f91;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #e05578;
+}
+
+/* EXTRA TEXT */
+.extra {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.extra a {
+    color: #ff6f91;
+    text-decoration: none;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    font-size: 14px;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="home.html">Home</a>
+    <a href="registration.html">Registration</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="login.html">Form</a>
+    <a href="about.html">About</a>
+</nav>
+
+<div class="form-container">
+<h2>Create Account</h2>
+
+<form>
+    <input type="text" placeholder="Full Name" required>
+
+    <input type="email" placeholder="Email Address" required>
+
+    <input type="password" placeholder="Password" required>
+
+    <input type="password" placeholder="Confirm Password" required>
+
+    <button type="submit">Register</button>
+</form>
+
+<div class="extra">
+    Already have an account? <a href="login.html">Login</a>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>© 2026 My First Website | Designed with passion 💖</p>
+</div>
+
+</body>
+</html> 

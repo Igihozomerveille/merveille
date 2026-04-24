@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("lll.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .navbar {
+      padding: 15px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .navbar a {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      position: relative;
+      transition: 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: plum;
+      transform: scale(1.1);
+    }
+
+    .navbar a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      left: 0;
+      bottom: -5px;
+      background-color: hotpink;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover::after {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+  <a href="home.html">Home</a>
+  <a href="registration.html">Registration</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="login.html">Form</a>
+  <a href="about.html">About</a>
+</nav>
+
+<h1>About Us</h1>
+<h2>A simple site for ideas</h2>
+
+<div style="color:black;width:70%;margin:30px auto;padding:20px;border-radius:10px;text-align:center;">
+  <h2>Welcome</h2>
+  <p>This site helps you learn and explore ideas.</p>
+
+  <h3>Features</h3>
+  <ul style="text-align:left;display:inline-block;">
+    <li>Easy navigation</li>
+    <li>User registration</li>
+    <li>Image gallery</li>
+    <li>Basic web learning</li>
+  </ul>
+</div>
+
+<div style="width:70%;margin:20px auto;padding:20px;border-radius:10px;text-align:center;">
+  <h3>Why Use It?</h3>
+  <p>Simple, clean, and easy to use.</p>
+</div>
+
+<div style="color:white;width:70%;margin:20px auto;padding:20px;border-radius:10px;text-align:center;">
+  <h3>Quick Links</h3>
+
+  <a href="home.html" style="color:black;background:palegoldenrod;padding:10px;margin:5px;display:inline-block;text-decoration:none;border-radius:5px;">Home</a>
+  <a href="registration.html" style="color:black;background:papayawhip;padding:10px;margin:5px;display:inline-block;text-decoration:none;border-radius:5px;">Registration</a>
+  <a href="gallery.html" style="color:black;background:plum;padding:10px;margin:5px;display:inline-block;text-decoration:none;border-radius:5px;">Gallery</a>
+  <a href="login.html" style="color:black;background:peachpuff;padding:10px;margin:5px;display:inline-block;text-decoration:none;border-radius:5px;">Form</a>
+</div>
+
+<div style="color:white;text-align:center;padding:10px;margin-top:30px;">
+  © 2026 My Website
+</div>
+
+</body>
+</html>

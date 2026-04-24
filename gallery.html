@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gallery</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url('house.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* NAVBAR */
+nav {
+  background-color: hotpink;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: black;
+}
+
+/* TITLE */
+h1 {
+  color: white;
+  font-size: 40px;
+  text-shadow: 2px 2px 5px black;
+  margin: 30px;
+}
+
+/* GALLERY GRID */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* IMAGE STYLE */
+.gallery img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  margin-top: 30px;
+  padding: 20px;
+  color: white;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+  <a href="home.html">Home</a>
+  <a href="registration.html">Registration</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="login.html">Form</a>
+  <a href="about.html">About</a>
+</nav>
+
+<h1>My Gallery</h1>
+
+<div class="gallery">
+  <img src="hhm.jpg" alt="hhm">
+  <img src="hm.jpg" alt="hm">
+  <img src="meme.jpg" alt="meme">
+  <img src="mm.jpg" alt="mm">
+</div>
+
+<footer>
+  © 2026 My Gallery
+</footer>
+
+</body>
+</html>
