@@ -1,0 +1,182 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Us</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* NAVBAR */
+.navbar {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(6px);
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover {
+  color: hotpink;
+  transform: scale(1.1);
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background-color: hotpink;
+  transition: 0.3s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* TITLE */
+h1 {
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+  font-size: 40px;
+  text-shadow: 2px 2px 8px black;
+}
+
+/* ABOUT BOX (modern glass style) */
+.about-box {
+  width: 70%;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  color: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.about-box h2 {
+  color: #ffd1dc;
+}
+
+/* LIST */
+ul {
+  text-align: left;
+  display: inline-block;
+}
+
+/* QUICK LINKS */
+.links {
+  width: 70%;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.links a {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 6px;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  background: rgba(0,0,0,0.5);
+  color: white;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+  <a href="home.html">Home</a>
+  <a href="registration.html">Registration</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="login.html">Form</a>
+  <a href="about.html">About</a>
+</nav>
+
+<h1>About Us</h1>
+
+<div class="about-box">
+  <h2>Welcome to Our Website</h2>
+  <p>
+    This website is designed as a simple learning project to help users explore 
+    basic web development concepts such as navigation, forms, image galleries, 
+    and user interaction.
+  </p>
+
+  <h3>What We Offer</h3>
+  <ul>
+    <li>Clean and simple design</li>
+    <li>User registration and login system</li>
+    <li>Image gallery showcase</li>
+    <li>Beginner-friendly structure</li>
+  </ul>
+
+  <h3>Our Goal</h3>
+  <p>
+    To provide an easy and creative platform for learning and practicing web design.
+  </p>
+</div>
+
+<div class="links">
+  <h3 style="color:white;">Quick Links</h3>
+
+  <a href="home.html" style="background:palegoldenrod;">Home</a>
+  <a href="registration.html" style="background:papayawhip;">Registration</a>
+  <a href="gallery.html" style="background:plum;">Gallery</a>
+  <a href="login.html" style="background:peachpuff;">Login</a>
+</div>
+
+<div class="footer">
+  <p>© 2026 My Website | About Page</p>
+  <p>Current Time: <span id="time"></span></p>
+</div>
+
+<script>
+function updateTime() {
+  const now = new Date();
+  document.getElementById("time").innerHTML = now.toLocaleTimeString();
+}
+
+setInterval(updateTime, 1000);
+updateTime();
+</script>
+
+</body>
+</html>

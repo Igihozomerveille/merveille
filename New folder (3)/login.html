@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("https://images.unsplash.com/photo-1519389950473-47ba0277781c");
+    background-size: cover;
+    background-position: center;
+}
+.navbar {
+    background-color: #1e3c72;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #00c9ff;
+    transform: scale(1.1);
+}
+.form-container {
+    width: 340px;
+    margin: 100px auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    border-top: 5px solid #00c9ff;
+    color: white;
+}
+
+.form-container h2 {
+    margin-bottom: 15px;
+    color: #00c9ff;
+}
+input {
+    width: 95%;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    box-shadow: 0 0 10px #00c9ff;
+    transform: scale(1.03);
+}
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 18px;
+    background: powderblue;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,201,255,0.5);
+}
+.form-container a {
+    color: #00c9ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-container a:hover {
+    text-decoration: underline;
+}
+.footer {
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    font-size: 14px;
+    background: rgba(0,0,0,0.4);
+    padding: 15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="home.html">Home</a>
+    <a href="registration.html">Registration</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="login.html">Form</a>
+    <a href="about.html">About</a>
+</nav>
+
+<div class="form-container">
+    <h2>Login</h2>
+
+    <form action="home.html" method="GET">
+        <input type="text" name="name" placeholder="Enter Name" required>
+        <input type="email" name="email" placeholder="Enter Email" required>
+        <input type="password" name="password" placeholder="Enter Password" required>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <p style="margin-top:12px;">
+        Don't have an account? <a href="registration.html">Create one</a>
+    </p>
+
+    <p>
+        <a href="#">Forgot Password?</a>
+    </p>
+</div>
+
+<div class="footer">
+  <p>© 2026 My First Website | Login Portal</p>
+  <p>Current Time: <span id="time"></span></p>
+</div>
+
+<script>
+function updateTime() {
+    const now = new Date();
+    document.getElementById("time").innerHTML = now.toLocaleTimeString();
+}
+
+setInterval(updateTime, 1000);
+updateTime();
+</script>
+
+</body>
+</html>
